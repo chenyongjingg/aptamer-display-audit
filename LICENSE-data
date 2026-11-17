@@ -1,0 +1,8 @@
+Data and annotations: Creative Commons Attribution 4.0 International (CC BY 4.0)
+https://creativecommons.org/licenses/by/4.0/
+
+The annotation layer (silver_labels.jsonl, predictions_hybrid_labels.jsonl,
+silver_qa_v2.json, splits.json, results/) is released under CC BY 4.0.
+Publisher abstracts and full texts are NOT redistributed. Quote excerpts are
+limited to 25 words and are provided for verification only; full texts must be
+obtained from the original publishers under their own licences.

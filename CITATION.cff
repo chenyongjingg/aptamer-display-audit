@@ -1,0 +1,25 @@
+cff-version: 1.2.0
+message: "If you use this benchmark or pipeline, please cite this repository and the companion review."
+title: "Auditing What Is Absent: A Consensus-Silver Benchmark and Automated Auditor for Pharmacokinetic Reporting in Aptamer–Nanostructure Cancer Literature"
+version: 0.1.0
+date-released: 2026-11-17
+license: MIT
+repository-code: "https://github.com/chenyongjingg/aptamer-display-audit"
+authors:
+  - family-names: Xue
+    given-names: Ziying
+    affiliation: "People's Public Security University of China"
+  - family-names: Chen
+    given-names: Yongjin
+    affiliation: "People's Public Security University of China"
+  - family-names: Zhu
+    given-names: Songze
+    affiliation: "People's Public Security University of China"
+    email: "20196846@ppsuc.edu.cn"
+keywords:
+  - aptamer
+  - DNA nanostructure
+  - pharmacokinetics
+  - reporting audit
+  - silver standard
+  - evidence-grounded extraction

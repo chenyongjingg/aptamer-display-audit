@@ -1,0 +1,9 @@
+{
+  "version": "0.1.0",
+  "hashes": {
+    "protocol.md": null,
+    "prompts/p2.md": null,
+    "configs/full_auto.yaml": null
+  },
+  "note": "Run scripts/make_prereg.py to fill the hashes before a real run."
+}

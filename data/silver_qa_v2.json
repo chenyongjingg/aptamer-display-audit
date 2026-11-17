@@ -1,0 +1,341 @@
+{
+  "n_docs": 102,
+  "sanity_pass_rate": 1.0,
+  "sanity_fail_values": 0,
+  "cross_field": {
+    "id_per_g_has_time_route": {
+      "applicable": 2,
+      "ok": 0,
+      "rate": 0.0
+    },
+    "efficacy_has_comparator": {
+      "applicable": 29,
+      "ok": 10,
+      "rate": 0.345
+    },
+    "linker_has_chemistry": {
+      "applicable": 0,
+      "ok": 0,
+      "rate": null
+    }
+  },
+  "tier_coverage": {
+    "1": {
+      "high": 712,
+      "n": 816,
+      "rate": 0.873
+    },
+    "2": {
+      "high": 519,
+      "n": 612,
+      "rate": 0.848
+    },
+    "3": {
+      "high": 157,
+      "n": 204,
+      "rate": 0.77
+    }
+  },
+  "fields": {
+    "kd": {
+      "high": 99,
+      "medium": 3,
+      "low": 0,
+      "coverage_high": 0.971,
+      "status": {
+        "not_reported": 99,
+        "reported": 3
+      },
+      "provenance": {
+        "llmA": 99,
+        "rule": 101,
+        "llmB": 22
+      },
+      "n_values": 5,
+      "n_sanity_fail": 0,
+      "n_context_complete": 0
+    },
+    "id_per_g": {
+      "high": 101,
+      "medium": 1,
+      "low": 0,
+      "coverage_high": 0.99,
+      "status": {
+        "not_reported": 100,
+        "reported": 2
+      },
+      "provenance": {
+        "llmA": 101,
+        "rule": 100,
+        "llmB": 23
+      },
+      "n_values": 2,
+      "n_sanity_fail": 0,
+      "n_context_complete": 0
+    },
+    "half_life": {
+      "high": 100,
+      "medium": 2,
+      "low": 0,
+      "coverage_high": 0.98,
+      "status": {
+        "not_reported": 100,
+        "reported": 2
+      },
+      "provenance": {
+        "llmA": 101,
+        "rule": 101,
+        "llmB": 23
+      },
+      "n_values": 3,
+      "n_sanity_fail": 0,
+      "n_context_complete": 0
+    },
+    "dose": {
+      "high": 91,
+      "medium": 9,
+      "low": 2,
+      "coverage_high": 0.892,
+      "status": {
+        "not_reported": 91,
+        "conflict": 2,
+        "reported": 9
+      },
+      "provenance": {
+        "llmA": 97,
+        "rule": 98,
+        "llmB": 19
+      },
+      "n_values": 11,
+      "n_sanity_fail": 0,
+      "n_context_complete": 0
+    },
+    "route": {
+      "high": 79,
+      "medium": 17,
+      "low": 6,
+      "coverage_high": 0.775,
+      "status": {
+        "reported": 22,
+        "conflict": 6,
+        "not_reported": 74
+      },
+      "provenance": {
+        "llmA": 89,
+        "rule": 95,
+        "llmB": 17
+      },
+      "n_values": 22,
+      "n_sanity_fail": 0,
+      "n_context_complete": 0
+    },
+    "time_points": {
+      "high": 81,
+      "medium": 19,
+      "low": 2,
+      "coverage_high": 0.794,
+      "status": {
+        "not_reported": 81,
+        "reported": 19,
+        "conflict": 2
+      },
+      "provenance": {
+        "llmA": 83,
+        "rule": 102,
+        "llmB": 17
+      },
+      "n_values": 49,
+      "n_sanity_fail": 0,
+      "n_context_complete": 0
+    },
+    "numeric_efficacy": {
+      "high": 71,
+      "medium": 28,
+      "low": 3,
+      "coverage_high": 0.696,
+      "status": {
+        "reported": 29,
+        "not_reported": 70,
+        "conflict": 3
+      },
+      "provenance": {
+        "llmA": 97,
+        "llmB": 21,
+        "rule": 76,
+        "review": 1
+      },
+      "n_values": 36,
+      "n_sanity_fail": 0,
+      "n_context_complete": 1
+    },
+    "serum_stability": {
+      "high": 90,
+      "medium": 12,
+      "low": 0,
+      "coverage_high": 0.882,
+      "status": {
+        "not_reported": 89,
+        "reported": 13
+      },
+      "provenance": {
+        "llmA": 100,
+        "rule": 90,
+        "llmB": 22
+      },
+      "n_values": 14,
+      "n_sanity_fail": 0,
+      "n_context_complete": 0
+    },
+    "valency": {
+      "high": 48,
+      "medium": 40,
+      "low": 14,
+      "coverage_high": 0.471,
+      "status": {
+        "conflict": 14,
+        "reported": 40,
+        "not_reported": 48
+      },
+      "provenance": {
+        "llmA": 74,
+        "rule": 89,
+        "review": 5,
+        "llmB": 15
+      },
+      "n_values": 46,
+      "n_sanity_fail": 0,
+      "n_context_complete": 0
+    },
+    "spacing": {
+      "high": 100,
+      "medium": 0,
+      "low": 2,
+      "coverage_high": 0.98,
+      "status": {
+        "not_reported": 100,
+        "conflict": 2
+      },
+      "provenance": {
+        "llmA": 102,
+        "rule": 102,
+        "llmB": 24,
+        "review": 1
+      },
+      "n_values": 0,
+      "n_sanity_fail": 0,
+      "n_context_complete": 0
+    },
+    "linker_length": {
+      "high": 102,
+      "medium": 0,
+      "low": 0,
+      "coverage_high": 1.0,
+      "status": {
+        "not_reported": 102
+      },
+      "provenance": {
+        "llmA": 102,
+        "rule": 102,
+        "llmB": 24
+      },
+      "n_values": 0,
+      "n_sanity_fail": 0,
+      "n_context_complete": 0
+    },
+    "linker_chemistry": {
+      "high": 100,
+      "medium": 2,
+      "low": 0,
+      "coverage_high": 0.98,
+      "status": {
+        "not_reported": 100,
+        "reported": 2
+      },
+      "provenance": {
+        "llmA": 102,
+        "rule": 100,
+        "llmB": 24
+      },
+      "n_values": 2,
+      "n_sanity_fail": 0,
+      "n_context_complete": 0
+    },
+    "size": {
+      "high": 81,
+      "medium": 16,
+      "low": 5,
+      "coverage_high": 0.794,
+      "status": {
+        "not_reported": 80,
+        "reported": 17,
+        "conflict": 5
+      },
+      "provenance": {
+        "llmA": 91,
+        "rule": 96,
+        "llmB": 20
+      },
+      "n_values": 21,
+      "n_sanity_fail": 0,
+      "n_context_complete": 0
+    },
+    "attachment": {
+      "high": 88,
+      "medium": 12,
+      "low": 2,
+      "coverage_high": 0.863,
+      "status": {
+        "conflict": 2,
+        "not_reported": 88,
+        "reported": 12
+      },
+      "provenance": {
+        "llmA": 101,
+        "rule": 90,
+        "llmB": 21
+      },
+      "n_values": 12,
+      "n_sanity_fail": 0,
+      "n_context_complete": 0
+    },
+    "comparator": {
+      "high": 66,
+      "medium": 21,
+      "low": 15,
+      "coverage_high": 0.647,
+      "status": {
+        "not_reported": 64,
+        "conflict": 15,
+        "reported": 23
+      },
+      "provenance": {
+        "llmA": 92,
+        "rule": 88,
+        "llmB": 14
+      },
+      "n_values": 26,
+      "n_sanity_fail": 0,
+      "n_context_complete": 0
+    },
+    "immune": {
+      "high": 91,
+      "medium": 9,
+      "low": 2,
+      "coverage_high": 0.892,
+      "status": {
+        "not_reported": 89,
+        "reported": 11,
+        "conflict": 2
+      },
+      "provenance": {
+        "llmA": 95,
+        "rule": 99,
+        "llmB": 21
+      },
+      "n_values": 12,
+      "n_sanity_fail": 0,
+      "n_context_complete": 0
+    }
+  },
+  "notes": "Q5 stability, Q6 decoy and Q7 external AutoPK anchor are separate functions; if not run, their status must be reported as not_run, not pass."
+}

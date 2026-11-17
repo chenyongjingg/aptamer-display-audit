@@ -1,0 +1,375 @@
+{
+  "E0_rules": {
+    "n_docs": 102,
+    "confidence": "high",
+    "primary": "value_macro_f1",
+    "secondary": "macro_f1",
+    "positive_confidence": [
+      "high",
+      "medium"
+    ],
+    "macro_f1": 0.9979151387360958,
+    "macro_f1_ci95": [
+      0.9952774165897881,
+      1.0
+    ],
+    "tier_macro_f1": {
+      "1": 0.9973734873487349,
+      "2": 0.9979423868312757,
+      "3": 1.0
+    },
+    "value_macro_f1": 0.5714285714285714,
+    "context_macro_f1": null,
+    "quote_valid_rate": 1.0,
+    "quote_exact_rate": 1.0,
+    "omission_rate": 0.23076923076923078,
+    "coverage_high": 0.8504901960784313,
+    "n_high_fields": 1388,
+    "n_all_fields": 1632,
+    "doc_all_or_nothing": 0.9705882352941176,
+    "per_field": {
+      "kd": {
+        "presence_f1": 1.0,
+        "n_docs": 99,
+        "value_f1": null,
+        "n_value_docs": 0,
+        "context_f1": null,
+        "n_context_docs": 0,
+        "tier": 1
+      },
+      "id_per_g": {
+        "presence_f1": 0.9900990099009901,
+        "n_docs": 101,
+        "value_f1": 0.0,
+        "n_value_docs": 1,
+        "context_f1": null,
+        "n_context_docs": 0,
+        "tier": 1
+      },
+      "half_life": {
+        "presence_f1": 1.0,
+        "n_docs": 100,
+        "value_f1": null,
+        "n_value_docs": 0,
+        "context_f1": null,
+        "n_context_docs": 0,
+        "tier": 1
+      },
+      "dose": {
+        "presence_f1": 1.0,
+        "n_docs": 91,
+        "value_f1": null,
+        "n_value_docs": 0,
+        "context_f1": null,
+        "n_context_docs": 0,
+        "tier": 1
+      },
+      "route": {
+        "presence_f1": 1.0,
+        "n_docs": 79,
+        "value_f1": 1.0,
+        "n_value_docs": 5,
+        "context_f1": null,
+        "n_context_docs": 0,
+        "tier": 1
+      },
+      "time_points": {
+        "presence_f1": 1.0,
+        "n_docs": 81,
+        "value_f1": null,
+        "n_value_docs": 0,
+        "context_f1": null,
+        "n_context_docs": 0,
+        "tier": 1
+      },
+      "numeric_efficacy": {
+        "presence_f1": 1.0,
+        "n_docs": 71,
+        "value_f1": 1.0,
+        "n_value_docs": 1,
+        "context_f1": null,
+        "n_context_docs": 0,
+        "tier": 1
+      },
+      "serum_stability": {
+        "presence_f1": 0.9888888888888889,
+        "n_docs": 90,
+        "value_f1": 0.0,
+        "n_value_docs": 1,
+        "context_f1": null,
+        "n_context_docs": 0,
+        "tier": 1
+      },
+      "valency": {
+        "presence_f1": 1.0,
+        "n_docs": 48,
+        "value_f1": null,
+        "n_value_docs": 0,
+        "context_f1": null,
+        "n_context_docs": 0,
+        "tier": 2
+      },
+      "spacing": {
+        "presence_f1": 1.0,
+        "n_docs": 100,
+        "value_f1": null,
+        "n_value_docs": 0,
+        "context_f1": null,
+        "n_context_docs": 0,
+        "tier": 2
+      },
+      "linker_length": {
+        "presence_f1": 1.0,
+        "n_docs": 102,
+        "value_f1": null,
+        "n_value_docs": 0,
+        "context_f1": null,
+        "n_context_docs": 0,
+        "tier": 2
+      },
+      "linker_chemistry": {
+        "presence_f1": 1.0,
+        "n_docs": 100,
+        "value_f1": null,
+        "n_value_docs": 0,
+        "context_f1": null,
+        "n_context_docs": 0,
+        "tier": 2
+      },
+      "size": {
+        "presence_f1": 0.9876543209876543,
+        "n_docs": 81,
+        "value_f1": 0.0,
+        "n_value_docs": 1,
+        "context_f1": null,
+        "n_context_docs": 0,
+        "tier": 2
+      },
+      "attachment": {
+        "presence_f1": 1.0,
+        "n_docs": 88,
+        "value_f1": null,
+        "n_value_docs": 0,
+        "context_f1": null,
+        "n_context_docs": 0,
+        "tier": 2
+      },
+      "comparator": {
+        "presence_f1": 1.0,
+        "n_docs": 66,
+        "value_f1": 1.0,
+        "n_value_docs": 2,
+        "context_f1": null,
+        "n_context_docs": 0,
+        "tier": 3
+      },
+      "immune": {
+        "presence_f1": 1.0,
+        "n_docs": 91,
+        "value_f1": 1.0,
+        "n_value_docs": 2,
+        "context_f1": null,
+        "n_context_docs": 0,
+        "tier": 3
+      }
+    }
+  },
+  "E1_zero_shot": {
+    "n_docs": 102,
+    "confidence": "high",
+    "primary": "value_macro_f1",
+    "secondary": "macro_f1",
+    "positive_confidence": [
+      "high",
+      "medium"
+    ],
+    "macro_f1": 0.9748480211728943,
+    "macro_f1_ci95": [
+      0.9644963384633949,
+      0.9846117967631858
+    ],
+    "tier_macro_f1": {
+      "1": 0.9707892959512969,
+      "2": 0.9856396756233358,
+      "3": 0.9587079587079588
+    },
+    "value_macro_f1": 0.028571428571428574,
+    "context_macro_f1": null,
+    "quote_valid_rate": 0.6,
+    "quote_exact_rate": 0.44,
+    "omission_rate": 0.8461538461538461,
+    "coverage_high": 0.8504901960784313,
+    "n_high_fields": 1388,
+    "n_all_fields": 1632,
+    "doc_all_or_nothing": 0.7549019607843137,
+    "per_field": {
+      "kd": {
+        "presence_f1": 1.0,
+        "n_docs": 99,
+        "value_f1": null,
+        "n_value_docs": 0,
+        "context_f1": null,
+        "n_context_docs": 0,
+        "tier": 1
+      },
+      "id_per_g": {
+        "presence_f1": 0.9900990099009901,
+        "n_docs": 101,
+        "value_f1": 0.0,
+        "n_value_docs": 1,
+        "context_f1": null,
+        "n_context_docs": 0,
+        "tier": 1
+      },
+      "half_life": {
+        "presence_f1": 1.0,
+        "n_docs": 100,
+        "value_f1": null,
+        "n_value_docs": 0,
+        "context_f1": null,
+        "n_context_docs": 0,
+        "tier": 1
+      },
+      "dose": {
+        "presence_f1": 0.978021978021978,
+        "n_docs": 91,
+        "value_f1": null,
+        "n_value_docs": 0,
+        "context_f1": null,
+        "n_context_docs": 0,
+        "tier": 1
+      },
+      "route": {
+        "presence_f1": 0.9493670886075949,
+        "n_docs": 79,
+        "value_f1": 0.2,
+        "n_value_docs": 5,
+        "context_f1": null,
+        "n_context_docs": 0,
+        "tier": 1
+      },
+      "time_points": {
+        "presence_f1": 1.0,
+        "n_docs": 81,
+        "value_f1": null,
+        "n_value_docs": 0,
+        "context_f1": null,
+        "n_context_docs": 0,
+        "tier": 1
+      },
+      "numeric_efficacy": {
+        "presence_f1": 0.9154929577464789,
+        "n_docs": 71,
+        "value_f1": 0.0,
+        "n_value_docs": 1,
+        "context_f1": null,
+        "n_context_docs": 0,
+        "tier": 1
+      },
+      "serum_stability": {
+        "presence_f1": 0.9333333333333333,
+        "n_docs": 90,
+        "value_f1": 0.0,
+        "n_value_docs": 1,
+        "context_f1": null,
+        "n_context_docs": 0,
+        "tier": 1
+      },
+      "valency": {
+        "presence_f1": 0.9583333333333334,
+        "n_docs": 48,
+        "value_f1": null,
+        "n_value_docs": 0,
+        "context_f1": null,
+        "n_context_docs": 0,
+        "tier": 2
+      },
+      "spacing": {
+        "presence_f1": 1.0,
+        "n_docs": 100,
+        "value_f1": null,
+        "n_value_docs": 0,
+        "context_f1": null,
+        "n_context_docs": 0,
+        "tier": 2
+      },
+      "linker_length": {
+        "presence_f1": 0.9901960784313726,
+        "n_docs": 102,
+        "value_f1": null,
+        "n_value_docs": 0,
+        "context_f1": null,
+        "n_context_docs": 0,
+        "tier": 2
+      },
+      "linker_chemistry": {
+        "presence_f1": 0.99,
+        "n_docs": 100,
+        "value_f1": null,
+        "n_value_docs": 0,
+        "context_f1": null,
+        "n_context_docs": 0,
+        "tier": 2
+      },
+      "size": {
+        "presence_f1": 0.9753086419753086,
+        "n_docs": 81,
+        "value_f1": 0.0,
+        "n_value_docs": 1,
+        "context_f1": null,
+        "n_context_docs": 0,
+        "tier": 2
+      },
+      "attachment": {
+        "presence_f1": 1.0,
+        "n_docs": 88,
+        "value_f1": null,
+        "n_value_docs": 0,
+        "context_f1": null,
+        "n_context_docs": 0,
+        "tier": 2
+      },
+      "comparator": {
+        "presence_f1": 0.9393939393939394,
+        "n_docs": 66,
+        "value_f1": 0.0,
+        "n_value_docs": 2,
+        "context_f1": null,
+        "n_context_docs": 0,
+        "tier": 3
+      },
+      "immune": {
+        "presence_f1": 0.978021978021978,
+        "n_docs": 91,
+        "value_f1": 0.0,
+        "n_value_docs": 2,
+        "context_f1": null,
+        "n_context_docs": 0,
+        "tier": 3
+      }
+    }
+  },
+  "_oof": {
+    "E0_rules": {
+      "folds": [
+        0.9965277777777778,
+        0.9963235294117647,
+        0.9970238095238095,
+        1.0,
+        1.0
+      ],
+      "mean": 0.9979750233426705
+    },
+    "E1_zero_shot": {
+      "folds": [
+        0.972404970760234,
+        0.9741633111577964,
+        0.9858911985846971,
+        0.9726755335307967,
+        0.9703598484848485
+      ],
+      "mean": 0.9750989725036746
+    }
+  },
+  "_failure_E4": null
+}

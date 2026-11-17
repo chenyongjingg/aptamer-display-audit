@@ -1,0 +1,17 @@
+torch>=2.5
+transformers>=4.51
+peft>=0.13
+bitsandbytes>=0.44
+accelerate>=1.0
+datasets>=2.20
+huggingface_hub>=0.25
+safetensors>=0.4
+sentencepiece>=0.2
+pyyaml>=6.0
+pandas>=2.2
+scipy>=1.14
+scikit-learn>=1.5
+jsonschema>=4.23
+pypdf>=5.0
+pdfplumber>=0.11
+tqdm>=4.66

@@ -1,0 +1,13 @@
+run_id: auto
+seed: 0
+docs: data/docs.jsonl
+limit: 20
+silver:
+  model_a: /model/ModelScope/LLM-Research/Meta-Llama-3.1-8B-Instruct
+  model_b: /model/ModelScope/AI-ModelScope/Ministral-8B-Instruct-2410
+  load_in_4bit: true
+eval:
+  model: /model/ModelScope/Qwen/Qwen2.5-7B-Instruct
+gates:
+  require_prereg: false
+  min_high_coverage: 0.40

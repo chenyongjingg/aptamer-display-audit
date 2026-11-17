@@ -1,0 +1,27 @@
+{
+  "dataset": {
+    "n_docs": 102,
+    "n_abstracts": 82,
+    "n_fulltexts": 20,
+    "n_positive_instances_high_medium": 204,
+    "n_positive_instances_high_only": 13,
+    "silver": "consensus silver standard; quotes redacted to <=25-word excerpts in this repository"
+  },
+  "full_102": {
+    "E0_rules": {"presence_macro_f1": 0.998, "value_f1": 0.394, "quote_valid_rate": 1.000, "coverage_high": 0.850},
+    "E1_zero_shot_qwen2.5_7b": {"presence_macro_f1": 0.975, "value_f1": 0.030, "quote_valid_rate": 0.600, "coverage_high": 0.850},
+    "E1cand_field_level_llm": {"presence_macro_f1": 0.990, "value_f1": 0.415, "quote_valid_rate": 1.000, "coverage_high": 0.850},
+    "HYBRID_rules_plus_field_llm": {"presence_macro_f1": 0.990, "value_f1": 0.415, "quote_valid_rate": 1.000, "coverage_high": 0.850}
+  },
+  "subset_30_high_positive": {
+    "E0_rules": {"presence_macro_f1": 1.000, "value_f1": 0.447, "quote_valid_rate": 1.000, "coverage_high": 0.708},
+    "E1_zero_shot_qwen2.5_7b": {"presence_macro_f1": 0.929, "value_f1": 0.041, "quote_valid_rate": 0.595, "coverage_high": 0.708},
+    "E1cand_field_level_llm": {"presence_macro_f1": 0.961, "value_f1": 0.094, "quote_valid_rate": 1.000, "coverage_high": 0.708},
+    "HYBRID_rules_plus_field_llm": {"presence_macro_f1": 0.978, "value_f1": 0.452, "quote_valid_rate": 1.000, "coverage_high": 0.708}
+  },
+  "verifier_5_docs": {
+    "HYBRID_5": {"presence_macro_f1": 0.939, "value_f1": 0.696, "quote_valid_rate": 1.000},
+    "VERIFIER2_5": {"presence_macro_f1": 0.939, "value_f1": 0.535, "quote_valid_rate": 1.000},
+    "note": "field-level verifier with forced JSON; still degrades value-F1; negative result"
+  }
+}
