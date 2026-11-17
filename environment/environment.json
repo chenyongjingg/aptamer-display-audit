@@ -1,0 +1,61 @@
+{
+  "python": "3.10.12",
+  "platform": "Linux-6.12.101-compshare-x86_64-with-glibc2.35",
+  "torch": "2.5.1+cu124",
+  "cuda": "12.4",
+  "cuda_available": true,
+  "gpu": "NVIDIA GeForce RTX 4090",
+  "transformers": "4.57.6",
+  "nvidia_smi": "NVIDIA GeForce RTX 4090, 24564 MiB, 610.57.04",
+  "models": [
+    {
+      "path": "/model/ModelScope/LLM-Research/Meta-Llama-3.1-8B-Instruct",
+      "exists": true,
+      "config_sha256": "29e4c210b0d6ac178b16b2a255a568bdb23b581e50ca1ef6a6d071dd85704e6e",
+      "index_sha256": "146776fce3f6db1103aa6f249e65ee5544c5923ce6f971b092eee79aa6e5d37b",
+      "generation_config_sha256": "189fb0c0d7fd8a527db217c0a60a0e013f0394cd8800f9697a666a9e75e5f7fd"
+    },
+    {
+      "path": "/model/ModelScope/AI-ModelScope/Ministral-8B-Instruct-2410",
+      "exists": true,
+      "config_sha256": "c675c1d724fdf951ba97b7241da3b1dab23371ab6af069f20c4001eaa0ce1dd6",
+      "index_sha256": "d08ce79ecc66f5ab39913d06b7803d723c58090a77605954807be64e70d861c7",
+      "generation_config_sha256": "8a23263756ef95ff6dd37ee2e5320c0074b0b7c8cc59a52ec3a4bf0feb619a11"
+    },
+    {
+      "path": "/model/ModelScope/Qwen/Qwen2.5-7B-Instruct",
+      "exists": true,
+      "config_sha256": "7463bb0ea78315365e6c6b74de4e73bbcc8359dfb0c5a737584e077d42c0b03c",
+      "index_sha256": "624bf7c47cd12468fdc16e38a47cf4f19e0415b859a223ba3c027eed2f0e1028",
+      "generation_config_sha256": "3a8f9087e486054c8a4a08dae2e5a3ba62e23da212b5b8c08bc42cb983c3459f"
+    },
+    {
+      "path": "/model/ModelScope/Qwen/Qwen2.5-Coder-7B-Instruct",
+      "exists": true,
+      "config_sha256": "c0242402ad6a13b331ea320feea8c7e3776ffb7a4eff0757b9cd667e116d9a28",
+      "index_sha256": "998a078123ffc97763690de7f2a677eb89168af5eaf8a5e12e6bc24d18e25bdb",
+      "generation_config_sha256": "1a628a5775bc69cde01c6749a531150ca4d3189652c618a174f7077923acf3b1"
+    },
+    {
+      "path": "/model/ModelScope/Qwen/Qwen2.5-0.5B-Instruct",
+      "exists": true,
+      "config_sha256": "18e18afcaccafade98daf13a54092927904649e1dd4eba8299ab717d5d94ff45",
+      "index_sha256": null,
+      "generation_config_sha256": "e558847a8b4402616f1273797b015104dc266fe4b520056fca88823ba8f8ebe6"
+    },
+    {
+      "path": "/model/ModelScope/Qwen/Qwen2.5-3B-Instruct",
+      "exists": true,
+      "config_sha256": "eed00b17e22553979d090fa492e587e92885e328914c8e0b0b78f0a0d3576b3b",
+      "index_sha256": "bc8aaa0c87d4335177e01c765f1de0db81661c67c1a72fbfb0d521b09f5ddc56",
+      "generation_config_sha256": "ea35dfb6fc5051b01114f9b995820d55dab01ed33ee490f6378b442af82c09f9"
+    },
+    {
+      "path": "/model/ModelScope/Qwen/Qwen2.5-14B-Instruct-GPTQ-Int4",
+      "exists": true,
+      "config_sha256": "cb68030a01344bd9666c582dffa37c5c308b286539a5babcbfc0eea81a0f63ab",
+      "index_sha256": "a757f0c0d926c58582ff046ea5738a188c7864afed48146ffa0dbcd955ef3405",
+      "generation_config_sha256": "fd01df57931815767cb12a9f0fe479a1ed9a5b2a4e7a203e751e54e5b01669dc"
+    }
+  ]
+}
