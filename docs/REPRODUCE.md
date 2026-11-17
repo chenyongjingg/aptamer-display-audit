@@ -61,11 +61,23 @@ python verifier2.py --pred runs/value_exp_full/pred_hybrid.jsonl \
 
 ## 4. Expected values
 
-See `results/value_experiments.json`. The headline values are:
+See `results/value_experiments.json` and `results/confirmatory_20261117.json`.
 
-- rules value-F1 0.394; zero-shot 0.030; hybrid 0.415 on 102 documents;
-- presence macro-F1 ≈0.99 for all systems (absence-dominated corpus);
-- verifier2 degrades value-F1 from 0.696 to 0.535 on 5 documents.
+**Confirmatory (frozen before inference, S0 passed):**
+
+```bash
+python run_pipeline.py --config configs/prereg_zs.yaml   --run-id prereg_zs_20261117 --detach
+python run_hybrid_confirm.py --config configs/prereg_or.yaml
+python evaluate_or.py
+```
+
+- rules value-F1 0.3969; zero-shot 0.0298; hybrid 0.4181 on 102 documents;
+- presence macro-F1 0.9903 (hybrid), 0.9750 (zero-shot); quote validity 1.000 (hybrid);
+- temporal hybrid: 0.4027 on 2025+ (n=25), 0.4653 pre-2025 (n=77);
+- H4 (Tier-1 < Tier-2) falsified: 0.4409 > 0.2868.
+
+**Exploratory (post-hoc):** rules 0.394; zero-shot 0.030; hybrid 0.415; verifier2
+degrades value-F1 0.696 → 0.535 on 5 documents.
 
 ## 5. What is not reproduced
 

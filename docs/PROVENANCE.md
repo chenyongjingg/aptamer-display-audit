@@ -23,6 +23,23 @@ Therefore:
 This is recorded rather than hidden. A journal claim of pre-registration must
 not be based on this archived run; a fresh S0-passed run is required.
 
+## Confirmatory runs (S0 passed)
+
+Two runs were frozen **before** inference and passed the S0 hash gate:
+
+| Run | Config | Preregister | Completed |
+|---|---|---|---|
+| `prereg_zs_20261117` | `configs/prereg_zs.yaml` | `prereg.json` | 2026-11-17T03:16:45Z |
+| `hybrid_confirm` | `configs/prereg_or.yaml` | `prereg_or.json` | 2026-11-17T03:29:07Z |
+
+`or_confirm` then computed cross-system metrics, temporal subsets and the AutoPK
+reference. The confirmatory zero-shot predictions are byte-identical to the
+archived exploratory predictions (`sha256 aab29c3c…`), i.e. the exploratory
+ranking was not an artefact of a different inference path.
+
+The primary endpoint, corpus, silver file and quote gate were unchanged between
+the exploratory and confirmatory runs; only the freezing (S0) differs.
+
 ## Seeds and training
 
 - The archived QLoRA adapters (`runs/full_auto/train/fold*/adapter`) were trained

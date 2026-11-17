@@ -1,0 +1,343 @@
+{
+ "generated_utc": "2026-11-17T03:45:00Z",
+ "design": "confirmatory, frozen before inference; S0 pre-registration gate passed",
+ "prereg_files": [
+  "prereg.json (zero-shot E0/E1)",
+  "prereg_or.json (hybrid)"
+ ],
+ "run_ids": [
+  "prereg_zs_20261117",
+  "hybrid_confirm",
+  "or_confirm"
+ ],
+ "corpus": {
+  "n_docs": 102,
+  "n_abstracts": 82,
+  "n_fulltexts": 20,
+  "silver": "silver_v2 (frozen)"
+ },
+ "primary_endpoint": "value set-F1 on high+medium reported fields",
+ "systems": {
+  "E0_rules": {
+   "n_docs": 102,
+   "value_macro_f1": 0.39691732799524576,
+   "macro_f1": 0.9979151387360958,
+   "quote_valid_rate": 1.0,
+   "quote_exact_rate": 1.0,
+   "coverage_high": 0.8517156862745098,
+   "n_high_fields": 1390,
+   "n_all_fields": 1632,
+   "omission_rate": 0.5,
+   "context_macro_f1": null,
+   "doc_all_or_nothing": 0.9705882352941176
+  },
+  "E1_zero_shot": {
+   "n_docs": 102,
+   "value_macro_f1": 0.029831543668555553,
+   "macro_f1": 0.9749927250123694,
+   "quote_valid_rate": 0.6,
+   "quote_exact_rate": 0.44,
+   "coverage_high": 0.8517156862745098,
+   "n_high_fields": 1390,
+   "n_all_fields": 1632,
+   "omission_rate": 0.8009708737864077,
+   "context_macro_f1": null,
+   "doc_all_or_nothing": 0.7549019607843137
+  },
+  "HYBRID": {
+   "n_docs": 102,
+   "value_macro_f1": 0.41811091935012745,
+   "macro_f1": 0.9903064488959646,
+   "quote_valid_rate": 1.0,
+   "quote_exact_rate": 0.9968944099378882,
+   "coverage_high": 0.8517156862745098,
+   "n_high_fields": 1390,
+   "n_all_fields": 1632,
+   "omission_rate": 0.45145631067961167,
+   "context_macro_f1": null,
+   "doc_all_or_nothing": 0.9019607843137255
+  },
+  "temporal": {
+   "E1_zero_shot__late_2025plus": 0.024877899877899876,
+   "E1_zero_shot__early_pre2025": 0.03055093663646295,
+   "HYBRID__late_2025plus": 0.40270146520146527,
+   "HYBRID__early_pre2025": 0.46526895097383825
+  }
+ },
+ "tier_value_f1": {
+  "E0_rules": {
+   "1": {
+    "macro_value_f1": 0.417637706411051,
+    "n_fields": 8,
+    "fields": {
+     "kd": {
+      "value_f1": 0.6667,
+      "n_value_docs": 3
+     },
+     "id_per_g": {
+      "value_f1": 0.0,
+      "n_value_docs": 2
+     },
+     "half_life": {
+      "value_f1": 0.5,
+      "n_value_docs": 2
+     },
+     "dose": {
+      "value_f1": 0.4519,
+      "n_value_docs": 9
+     },
+     "route": {
+      "value_f1": 0.6818,
+      "n_value_docs": 22
+     },
+     "time_points": {
+      "value_f1": 0.8133,
+      "n_value_docs": 19
+     },
+     "numeric_efficacy": {
+      "value_f1": 0.1505,
+      "n_value_docs": 31
+     },
+     "serum_stability": {
+      "value_f1": 0.0769,
+      "n_value_docs": 13
+     }
+    }
+   },
+   "2": {
+    "macro_value_f1": 0.2742909663865546,
+    "n_fields": 4,
+    "fields": {
+     "valency": {
+      "value_f1": 0.5089,
+      "n_value_docs": 40
+     },
+     "linker_chemistry": {
+      "value_f1": 0.0,
+      "n_value_docs": 2
+     },
+     "size": {
+      "value_f1": 0.5882,
+      "n_value_docs": 17
+     },
+     "attachment": {
+      "value_f1": 0.0,
+      "n_value_docs": 12
+     }
+    }
+   },
+   "3": {
+    "macro_value_f1": 0.5592885375494071,
+    "n_fields": 2,
+    "fields": {
+     "comparator": {
+      "value_f1": 0.3913,
+      "n_value_docs": 23
+     },
+     "immune": {
+      "value_f1": 0.7273,
+      "n_value_docs": 11
+     }
+    }
+   }
+  },
+  "E1_zero_shot": {
+   "1": {
+    "macro_value_f1": 0.028341565056335852,
+    "n_fields": 8,
+    "fields": {
+     "kd": {
+      "value_f1": 0.0,
+      "n_value_docs": 3
+     },
+     "id_per_g": {
+      "value_f1": 0.0,
+      "n_value_docs": 2
+     },
+     "half_life": {
+      "value_f1": 0.0,
+      "n_value_docs": 2
+     },
+     "dose": {
+      "value_f1": 0.0,
+      "n_value_docs": 9
+     },
+     "route": {
+      "value_f1": 0.0909,
+      "n_value_docs": 22
+     },
+     "time_points": {
+      "value_f1": 0.0175,
+      "n_value_docs": 19
+     },
+     "numeric_efficacy": {
+      "value_f1": 0.1183,
+      "n_value_docs": 31
+     },
+     "serum_stability": {
+      "value_f1": 0.0,
+      "n_value_docs": 13
+     }
+    }
+   },
+   "2": {
+    "macro_value_f1": 0.025,
+    "n_fields": 4,
+    "fields": {
+     "valency": {
+      "value_f1": 0.1,
+      "n_value_docs": 40
+     },
+     "linker_chemistry": {
+      "value_f1": 0.0,
+      "n_value_docs": 2
+     },
+     "size": {
+      "value_f1": 0.0,
+      "n_value_docs": 17
+     },
+     "attachment": {
+      "value_f1": 0.0,
+      "n_value_docs": 12
+     }
+    }
+   },
+   "3": {
+    "macro_value_f1": 0.045454545454545456,
+    "n_fields": 2,
+    "fields": {
+     "comparator": {
+      "value_f1": 0.0,
+      "n_value_docs": 23
+     },
+     "immune": {
+      "value_f1": 0.0909,
+      "n_value_docs": 11
+     }
+    }
+   }
+  },
+  "HYBRID": {
+   "1": {
+    "macro_value_f1": 0.4409007337063364,
+    "n_fields": 8,
+    "fields": {
+     "kd": {
+      "value_f1": 0.6667,
+      "n_value_docs": 3
+     },
+     "id_per_g": {
+      "value_f1": 0.0,
+      "n_value_docs": 2
+     },
+     "half_life": {
+      "value_f1": 0.5,
+      "n_value_docs": 2
+     },
+     "dose": {
+      "value_f1": 0.4519,
+      "n_value_docs": 9
+     },
+     "route": {
+      "value_f1": 0.6818,
+      "n_value_docs": 22
+     },
+     "time_points": {
+      "value_f1": 0.8133,
+      "n_value_docs": 19
+     },
+     "numeric_efficacy": {
+      "value_f1": 0.1828,
+      "n_value_docs": 31
+     },
+     "serum_stability": {
+      "value_f1": 0.2308,
+      "n_value_docs": 13
+     }
+    }
+   },
+   "2": {
+    "macro_value_f1": 0.2867909663865546,
+    "n_fields": 4,
+    "fields": {
+     "valency": {
+      "value_f1": 0.5589,
+      "n_value_docs": 40
+     },
+     "linker_chemistry": {
+      "value_f1": 0.0,
+      "n_value_docs": 2
+     },
+     "size": {
+      "value_f1": 0.5882,
+      "n_value_docs": 17
+     },
+     "attachment": {
+      "value_f1": 0.0,
+      "n_value_docs": 12
+     }
+    }
+   },
+   "3": {
+    "macro_value_f1": 0.5895915678524375,
+    "n_fields": 2,
+    "fields": {
+     "comparator": {
+      "value_f1": 0.3913,
+      "n_value_docs": 23
+     },
+     "immune": {
+      "value_f1": 0.7879,
+      "n_value_docs": 11
+     }
+    }
+   }
+  }
+ },
+ "autopk_reference": {
+  "source": "AutoPK, IEEE ICTAI 2025, doi:10.1109/ICTAI66417.2025.00051",
+  "human_labeled_tables": 605,
+  "reported_f1": {
+   "half_life": 0.92,
+   "clearance": 0.91
+  },
+  "reported_hallucination_rate": "8-14% (Gemma 3-27B with AutoPK)",
+  "status": "literature_comparator_not_rerun",
+  "reason": "The 605 annotated tables are not publicly released; the repository provides DOIs and code, not tables/labels. Re-running the 100-table anchor would require the authors' data or new annotation, which this project does not perform.",
+  "interpretation": "Clinically/veterinarily structured PK tables are near-solved; narrative preclinical text with conditionals and absence is harder. The comparison is task-level, not a head-to-head run."
+ },
+ "hypotheses": {
+  "H1_zero_shot_value_f1_below_0.10": {
+   "observed": 0.029831543668555553,
+   "supported": true
+  },
+  "H2_hybrid_above_0.30_and_above_zero_shot": {
+   "observed": 0.41811091935012745,
+   "supported": true
+  },
+  "H3_hybrid_not_inferior_to_rules": {
+   "observed": {
+    "hybrid": 0.41811091935012745,
+    "rules": 0.39691732799524576
+   },
+   "supported": true
+  },
+  "H4_tier1_below_tier2": {
+   "observed": {
+    "tier1": 0.4409007337063364,
+    "tier2": 0.2867909663865546
+   },
+   "supported": false
+  },
+  "H2_presence_above_0.90": {
+   "observed": 0.9903064488959646,
+   "supported": true
+  }
+ },
+ "verifier_finding": {
+  "note": "field-level verifier degraded value-F1 (hybrid 0.696 -> 0.535 on 5 docs); exploratory, not part of the confirmatory run"
+ },
+ "qlora_finding": {
+  "note": "7B QLoRA collapsed to absence; exploratory negative result, adapters archived, not bitwise reproducible"
+ }
+}

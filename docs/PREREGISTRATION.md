@@ -51,3 +51,23 @@ python3 run_pipeline.py --config configs/prereg_zs.yaml \
 
 Expected artifacts: `runs/prereg_zs_20261117/audit/audit_metrics.json`,
 `pred_zero_shot.jsonl`, `manifest.json`, `stages` in `manifest.json`.
+
+## Outcome (run completed 2026-11-17T03:16:45Z)
+
+`prereg_zs_20261117` finished with `state=done`; 102/102 documents.
+
+| Quantity | Observed |
+|---|---|
+| E0 rules value-F1 | 0.3969 |
+| E1 zero-shot value-F1 | 0.0298 |
+| E1 presence macro-F1 | 0.9750 |
+| quote valid (E1) | 0.600 |
+| coverage high | 0.8517 |
+| n high fields | 1,390 |
+
+- **H1 supported:** 0.0298 < 0.10.
+- **H2 supported:** presence 0.9750 > 0.90.
+- **H3 supported:** rules 0.3969 > zero-shot 0.0298.
+
+Aggregates: `results/confirmatory_20261117.json`; narrative:
+`docs/CONFIRMATORY_RESULTS.md`.

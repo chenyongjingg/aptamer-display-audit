@@ -33,3 +33,27 @@
 - Primary endpoint: value set-F1 on high+medium reported fields (102 docs).
 - Secondary: presence macro-F1, quote validity, per-tier value-F1, 5-fold OOF.
 - No document exclusions; no model selection on test documents.
+
+## Outcome (`hybrid_confirm` done 2026-11-17T03:29:07Z; metrics 03:38Z)
+
+102/102 documents; no document exclusions; no training; no verifier.
+
+| System | value-F1 | presence | quote valid | coverage high |
+|---|---|---|---|---|
+| E0 rules | 0.3969 | 0.9979 | 1.000 | 0.8517 |
+| E1 zero-shot | 0.0298 | 0.9750 | 0.600 | 0.8517 |
+| HYBRID | 0.4181 | 0.9903 | 1.000 | 0.8517 |
+
+- **H1 supported:** zero-shot 0.0298 < 0.10.
+- **H2 supported:** hybrid 0.4181 > 0.30 and > zero-shot.
+- **H3 supported:** hybrid 0.4181 ≥ rules 0.3969.
+- **H4 falsified:** Tier-1 (PK) 0.4409 > Tier-2 (design) 0.2868; the
+  pre-registered direction was the reverse. Reported as a falsified hypothesis,
+  not repaired post hoc.
+- Temporal value-F1 (hybrid): 0.4027 on 2025+ (n=25), 0.4653 pre-2025 (n=77);
+  zero-shot 0.0249 / 0.0306 — ranking stable.
+- External AutoPK comparator remains **literature-only** (605 tables not public;
+  anchor not rerun).
+
+Aggregates: `results/confirmatory_20261117.json`; narrative:
+`docs/CONFIRMATORY_RESULTS.md`.
