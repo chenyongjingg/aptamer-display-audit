@@ -47,9 +47,10 @@
 - **H1 supported:** zero-shot 0.0298 < 0.10.
 - **H2 supported:** hybrid 0.4181 > 0.30 and > zero-shot.
 - **H3 supported:** hybrid 0.4181 ≥ rules 0.3969.
-- **H4 falsified:** Tier-1 (PK) 0.4409 > Tier-2 (design) 0.2868; the
-  pre-registered direction was the reverse. Reported as a falsified hypothesis,
-  not repaired post hoc.
+- **H4 not supported:** Tier-1 (PK) 0.4409 > Tier-2 (design) 0.2868; the
+  pre-registered direction was the reverse. The paired difference is +0.154,
+  95% CI [-0.031, 0.313] (p≈0.11), so no tier gradient is established. Reported
+  as a failed prediction, not repaired post hoc.
 - Temporal value-F1 (hybrid): 0.4027 on 2025+ (n=25), 0.4653 pre-2025 (n=77);
   zero-shot 0.0249 / 0.0306 — ranking stable.
 - External AutoPK comparator remains **literature-only** (605 tables not public;
@@ -57,3 +58,19 @@
 
 Aggregates: `results/confirmatory_20261117.json`; narrative:
 `docs/CONFIRMATORY_RESULTS.md`.
+
+## Post-confirmatory robustness (not pre-registered)
+
+After the confirmatory run, four robustness analyses were added. They do **not**
+carry pre-registered status:
+
+- **Bootstrap (2000 document resamples):** HYBRID 0.418 [0.319, 0.525];
+  HYBRID−E0 +0.0217 [0.0052, 0.0418]; HYBRID−E1 +0.393 [0.290, 0.488].
+- **Silver leave-one-source-out:** dropping Ministral gives 0.423 / 0.028 / 0.442
+  (ranking unchanged); a rules+Ministral variant gives 0.683 / 0.070 / 0.706 on
+  its own subset. Absolute values depend on the label definition.
+- **Cross-family:** on a fixed 40-document subset, Ministral-8B zero-shot reaches
+  0.251 versus Qwen2.5-7B 0.039; Ministral hybrid reaches 0.487 (presence 0.869)
+  versus Qwen hybrid 0.418 (presence 0.990). The zero-shot result is
+  model-specific; value extraction and absence detection dissociate.
+- **Stratification:** HYBRID 0.669 on full texts versus 0.250 on abstracts.

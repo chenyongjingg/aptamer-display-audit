@@ -38,14 +38,23 @@ automatically, and where value extraction still fails.
 Temporal split (value-F1): hybrid 0.403 on 2025+ (n=25) vs 0.465 pre-2025 (n=77);
 zero-shot 0.025 vs 0.031 — the ranking is stable across time.
 
+**Robustness (post-confirmatory, not pre-registered):** hybrid−rules +0.0217,
+95% CI [0.0052, 0.0418]; dropping the Ministral silver source keeps the ranking
+(0.423 / 0.028 / 0.442); hybrid is 0.669 on full texts vs 0.250 on abstracts.
+Cross-family: on the same 40-document subset, Ministral-8B zero-shot reaches
+**0.251** vs Qwen2.5-7B **0.039**, and Ministral hybrid **0.487** vs Qwen hybrid
+**0.418** (presence 0.869 vs 0.990). The 0.030 zero-shot figure is therefore
+model-specific, not a general property of zero-shot LLMs.
+
 **Exploratory (post-hoc, archived; not pre-registered):** field-level LLM alone 0.415;
 field-level verifier with forced JSON degrades value-F1 0.696 → 0.535 on 5 documents;
 7B QLoRA collapses to absence. These are reported as negative/exploratory findings.
 
 Presence is high because most fields are `not_reported`; it is not extraction performance.
-The value bottleneck is real: zero-shot 0.030, hybrid 0.418. Rules do most of the work;
+The value bottleneck is real for this evaluator: Qwen2.5-7B zero-shot 0.030, hybrid 0.418. Rules do most of the work;
 the field-level LLM adds +0.021 over rules. The pre-registered tier hypothesis
-(Tier-1 PK < Tier-2 design) was **falsified**: Tier-1 0.441 > Tier-2 0.287.
+(Tier-1 PK < Tier-2 design) was **not supported**: Tier-1 0.441 > Tier-2 0.287,
+but the paired difference CI [-0.031, 0.313] includes 0.
 
 ## Quick start
 
@@ -74,9 +83,9 @@ Two confirmatory audits were frozen before inference on 2026-11-17:
 `docs/PREREGISTRATION.md` (`prereg.json`, `configs/prereg_zs.yaml`, run id
 `prereg_zs_20261117`) and `docs/PREREGISTRATION_OR.md` (`prereg_or.json`,
 `configs/prereg_or.yaml`, run id `hybrid_confirm`). Both passed S0. Outcomes:
-H1 (zero-shot < 0.10) supported (0.030); H2 (hybrid > 0.30 and > zero-shot)
+H1 (Qwen2.5-7B zero-shot < 0.10) supported (0.030); H2 (hybrid > 0.30 and > zero-shot)
 supported (0.418); H3 (hybrid not inferior to rules) supported (0.418 ≥ 0.397);
-H4 (Tier-1 PK < Tier-2 design) **falsified** (0.441 > 0.287). The earlier
+H4 (Tier-1 PK < Tier-2 design) **not supported** (0.441 > 0.287; Δ CI includes 0). The earlier
 `full_auto` run remains archived as **post-hoc exploratory**; do not cite it as
 pre-registered. QLoRA is exploratory/negative and is not claimed as bitwise reproducible.
 
