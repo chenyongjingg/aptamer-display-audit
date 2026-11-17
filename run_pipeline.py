@@ -233,7 +233,8 @@ def s5(ctx: Ctx):
                "--silver", str(silver), "--out", str(out),
                "--model", cfg.get("model", "/model/ModelScope/Qwen/Qwen2.5-7B-Instruct"),
                "--epochs", str(cfg.get("epochs", 1.0)),
-               "--splits", str(splits), "--fold", str(k)]
+               "--splits", str(splits), "--fold", str(k),
+               "--seed", str(cfg.get("seed", ctx.config.get("seed", 0)))]
         if cfg.get("positive_only"):
             cmd.append("--positive-only")
         log = ctx.run_dir / "logs" / f"S5_train_fold{k}.log"

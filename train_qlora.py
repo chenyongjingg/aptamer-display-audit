@@ -107,10 +107,14 @@ def main() -> int:
     ap.add_argument("--lr", type=float, default=2e-4)
     ap.add_argument("--limit-docs", type=int, default=None)
     ap.add_argument("--positive-only", action="store_true")
+    ap.add_argument("--seed", type=int, default=0)
     ap.add_argument("--splits", default=None)
     ap.add_argument("--fold", type=int, default=None)
     args = ap.parse_args()
 
+    random.seed(args.seed)
+    torch.manual_seed(args.seed)
+    torch.cuda.manual_seed_all(args.seed)
     out = Path(args.out); out.mkdir(parents=True, exist_ok=True)
     docs = load_jsonl(args.docs)
     silver = load_jsonl(args.silver)
@@ -166,6 +170,8 @@ def main() -> int:
         report_to=[],
         remove_unused_columns=False,
         dataloader_pin_memory=False,
+        seed=args.seed,
+        data_seed=args.seed,
     )
     trainer = Trainer(
         model=model, args=targs, train_dataset=DS(train, tok), eval_dataset=None,
