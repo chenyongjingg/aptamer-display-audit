@@ -1,0 +1,8 @@
+run_id: auto
+seed: 0
+docs: data/docs.jsonl
+silver: runs/full_auto/audit/silver_v2.jsonl
+model: /model/ModelScope/Qwen/Qwen2.5-7B-Instruct
+out: runs/hybrid_confirm
+max_new_tokens: 300
+candidates: 3
