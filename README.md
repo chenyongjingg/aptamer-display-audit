@@ -22,7 +22,7 @@ automatically, and where value extraction still fails.
 | `data/silver_qa_v2.json` | Q1–Q4/Q8 QA; Q5–Q7 are reported separately |
 | `data/splits.json` | 5-fold paper-level splits, leakage = 0 |
 | `results/` | value-F1 results and verifier negative result |
-| `docs/AUDIT.md` | full scientific-consistency audit (Chinese) |
+| `docs/AUDIT_SUMMARY.md` | audit findings and negative results (no publisher text) |
 
 ## Headline results (102 documents, 204 high+medium positives)
 
