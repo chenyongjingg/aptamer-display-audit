@@ -84,3 +84,33 @@ degrades value-F1 0.696 → 0.535 on 5 documents.
 Q5 stability, Q6 decoy and Q7 AutoPK external anchor are not run in this release.
 They require additional model calls or external data; report them as
 `not_run`/`not_available`, not as passed.
+
+## 6. Robustness analyses (post-confirmatory, not pre-registered)
+
+Frozen configs are unchanged; these scripts add uncertainty, label-source,
+stratification, cross-family and prompt-stability checks. A local corpus
+(`data/docs.jsonl`) is required and is not redistributed.
+
+```bash
+# bootstrap CIs, paired tests, failure taxonomy
+python robustness_stats.py
+# silver leave-one-source-out (offline, from cached sources)
+python silver_loo.py
+# abstract vs full-text / temporal stratification
+python stratified.py
+# Tier-1 vs Tier-2 paired difference
+python tier_diff.py
+
+# cross-family replication (Ministral-8B) and prompt stability
+python run_zs_eval.py --model /model/.../Ministral-8B-Instruct-2410 \
+  --docs data/docs_replication.jsonl --out runs/extra/zs_ministral
+python run_hybrid_confirm.py --config configs/prereg_or_ministral.yaml
+python run_zs_paraphrase.py --model /model/.../Qwen2.5-7B-Instruct \
+  --docs data/docs_replication.jsonl --out runs/extra/zs_qwen_paraphrase
+python run_hybrid_paraphrase.py --config configs/prereg_or.yaml
+python eval_extra.py
+python aggregate_robustness.py
+```
+
+`data/docs_replication.jsonl` contains publisher text and is **local-only**; the
+public repo carries `data/ids_replication.json` (document identifiers) instead.

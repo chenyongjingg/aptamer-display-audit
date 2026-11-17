@@ -1,0 +1,8 @@
+run_id: auto
+seed: 0
+docs: data/docs.jsonl
+silver: runs/prereg_zs_20261117/audit/silver_v2.jsonl
+model: /model/ModelScope/AI-ModelScope/Ministral-8B-Instruct-2410
+out: runs/extra/hybrid_ministral
+max_new_tokens: 300
+candidates: 3
