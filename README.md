@@ -59,6 +59,14 @@ The pipeline writes `runs/<id>/manifest.json`, `status.json`, per-stage artifact
 checksums. Gates fail closed: S0 refuses a changed protocol; S2b refuses low silver
 coverage; S5/S7 failures are recorded, never silently skipped.
 
+## Pre-registration
+
+A confirmatory zero-shot audit was frozen before inference on 2026-11-17:
+`docs/PREREGISTRATION.md`, `prereg.json`, `configs/prereg_zs.yaml` (run id
+`prereg_zs_20261117`, S0 passed). The earlier `full_auto` run remains archived
+as **post-hoc exploratory**; do not cite it as pre-registered. QLoRA is
+exploratory/negative and is not claimed as bitwise reproducible.
+
 ## Scientific scope
 
 - No human annotation. Silver labels are a **machine consensus**, not human truth;

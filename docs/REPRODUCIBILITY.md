@@ -15,6 +15,13 @@
 - **Snapshot integrity**: `SHA256SUMS.txt`; `scripts/check_snapshot.py` checks
   counts and recomputes the table.
 
+## Confirmatory rerun
+
+A pre-registered zero-shot run (`prereg_zs_20261117`) was frozen before
+inference; S0 passed. Its results (when archived under
+`runs/prereg_zs_20261117/`) supersede the post-hoc `full_auto` numbers for
+confirmatory claims. The old run remains exploratory.
+
 ## Known gaps (do not overclaim)
 
 1. **S0 was not passed for the final zero-shot rerun.** `prereg.json` hashes
