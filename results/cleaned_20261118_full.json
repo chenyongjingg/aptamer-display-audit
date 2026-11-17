@@ -1,0 +1,786 @@
+{
+  "systems": {
+    "E0_rules": {
+      "n_docs": 102,
+      "value_macro_f1": 0.38183540305754404,
+      "macro_f1": 0.986637015874362,
+      "quote_valid_rate": 1.0,
+      "quote_exact_rate": 1.0,
+      "coverage_high": 0.8854166666666666,
+      "n_high_fields": 1445,
+      "n_all_fields": 1632,
+      "omission_rate": 0.4217687074829932,
+      "doc_all_or_nothing": 0.8235294117647058,
+      "per_field": {
+        "kd": 0.6666666666666666,
+        "id_per_g": 0.0,
+        "half_life": 0.5,
+        "dose": 0.8133333333333332,
+        "route": 0.6818181818181818,
+        "time_points": 0.7749642514348396,
+        "numeric_efficacy": 0.0,
+        "serum_stability": 0.2,
+        "valency": 0.5903361344537814,
+        "spacing": null,
+        "linker_length": null,
+        "linker_chemistry": 0.0,
+        "size": 0.0,
+        "attachment": 0.0,
+        "comparator": 0.391304347826087,
+        "immune": 0.7272727272727273
+      },
+      "tier_value_f1": {
+        "1": 0.45459780415662765,
+        "2": 0.14758403361344535,
+        "3": 0.5592885375494071
+      },
+      "value_ci95": [
+        0.2926524756299601,
+        0.49924951117258815
+      ]
+    },
+    "E1_zero_shot": {
+      "n_docs": 102,
+      "value_macro_f1": 0.04790097857324748,
+      "macro_f1": 0.9672701215720455,
+      "quote_valid_rate": 0.6,
+      "quote_exact_rate": 0.44,
+      "coverage_high": 0.8854166666666666,
+      "n_high_fields": 1445,
+      "n_all_fields": 1632,
+      "omission_rate": 0.8231292517006803,
+      "doc_all_or_nothing": 0.7058823529411765,
+      "per_field": {
+        "kd": 0.0,
+        "id_per_g": 0.0,
+        "half_life": 0.0,
+        "dose": 0.0,
+        "route": 0.09090909090909091,
+        "time_points": 0.0196078431372549,
+        "numeric_efficacy": 0.38095238095238093,
+        "serum_stability": 0.0,
+        "valency": 0.08823529411764706,
+        "spacing": null,
+        "linker_length": null,
+        "linker_chemistry": 0.0,
+        "size": 0.0,
+        "attachment": 0.0,
+        "comparator": 0.0,
+        "immune": 0.09090909090909091
+      },
+      "tier_value_f1": {
+        "1": 0.061433664374840845,
+        "2": 0.022058823529411766,
+        "3": 0.045454545454545456
+      },
+      "value_ci95": [
+        0.015384615384615385,
+        0.09207459207459208
+      ]
+    },
+    "HYBRID": {
+      "n_docs": 102,
+      "value_macro_f1": 0.41485588397718465,
+      "macro_f1": 0.9764087586329651,
+      "quote_valid_rate": 1.0,
+      "quote_exact_rate": 0.9968944099378882,
+      "coverage_high": 0.8854166666666666,
+      "n_high_fields": 1445,
+      "n_all_fields": 1632,
+      "omission_rate": 0.38095238095238093,
+      "doc_all_or_nothing": 0.7647058823529411,
+      "per_field": {
+        "kd": 0.6666666666666666,
+        "id_per_g": 0.0,
+        "half_life": 0.5,
+        "dose": 0.8133333333333332,
+        "route": 0.6818181818181818,
+        "time_points": 0.7749642514348396,
+        "numeric_efficacy": 0.14285714285714285,
+        "serum_stability": 0.4,
+        "valency": 0.6491596638655461,
+        "spacing": null,
+        "linker_length": null,
+        "linker_chemistry": 0.0,
+        "size": 0.0,
+        "attachment": 0.0,
+        "comparator": 0.391304347826087,
+        "immune": 0.7878787878787878
+      },
+      "tier_value_f1": {
+        "1": 0.4974549470137705,
+        "2": 0.16228991596638653,
+        "3": 0.5895915678524374
+      },
+      "value_ci95": [
+        0.31742450452619536,
+        0.5433641453691579
+      ]
+    }
+  },
+  "paired": {
+    "HYBRID_minus_E0_rules": {
+      "delta": 0.03448264518267736,
+      "ci95": [
+        0.004158004158004158,
+        0.08050089445438285
+      ],
+      "p_two_sided_approx": 0.012
+    },
+    "HYBRID_minus_E1_zero_shot": {
+      "delta": 0.3797206315526001,
+      "ci95": [
+        0.27227740208509443,
+        0.4871918069720268
+      ],
+      "p_two_sided_approx": 0.0
+    }
+  },
+  "tier_diff_hybrid": {
+    "delta": 0.335165031047384,
+    "ci95": [
+      0.14305394897500162,
+      0.5561924847639133
+    ]
+  },
+  "stratified": {
+    "abstract": {
+      "n": 82,
+      "systems": {
+        "E0_rules": 0.2287878787878788,
+        "E1_zero_shot": 0.0422979797979798,
+        "HYBRID": 0.26645622895622895
+      }
+    },
+    "full_text": {
+      "n": 20,
+      "systems": {
+        "E0_rules": 0.6177932137307137,
+        "E1_zero_shot": 0.070128367003367,
+        "HYBRID": 0.6455709915084915
+      }
+    },
+    "pre2025": {
+      "n": 77,
+      "systems": {
+        "E0_rules": 0.4645912683950085,
+        "E1_zero_shot": 0.05782536551767321,
+        "HYBRID": 0.5151610689648091
+      }
+    },
+    "2025plus": {
+      "n": 25,
+      "systems": {
+        "E0_rules": 0.3547008547008547,
+        "E1_zero_shot": 0.042328042328042326,
+        "HYBRID": 0.3626373626373626
+      }
+    }
+  },
+  "cross_family": {
+    "zs_qwen": {
+      "n": 102,
+      "value": 0.04790097857324748,
+      "presence": 0.9672701215720455,
+      "quote": 0.6
+    },
+    "zs_ministral": {
+      "n": 40,
+      "value": 0.21818058031293322,
+      "presence": 0.9165158522323013,
+      "quote": 0.75
+    },
+    "hybrid_qwen": {
+      "n": 102,
+      "value": 0.41485588397718465,
+      "presence": 0.9764087586329651,
+      "quote": 1.0
+    },
+    "hybrid_ministral": {
+      "n": 102,
+      "value": 0.4847984064407155,
+      "presence": 0.8514235130384161,
+      "quote": 1.0
+    }
+  },
+  "failure": {
+    "E0_rules": {
+      "counts": {
+        "false_absence": 62,
+        "absence_contradiction": 18,
+        "multi_value": 24,
+        "wrong_value": 1
+      },
+      "absence_jaccard_mean": 0.6473634651600753
+    },
+    "E1_zero_shot": {
+      "counts": {
+        "false_absence": 120,
+        "fabrication": 13,
+        "wrong_value": 9,
+        "absence_contradiction": 35,
+        "status_error": 1
+      },
+      "absence_jaccard_mean": 0.4842744817726948
+    },
+    "HYBRID": {
+      "counts": {
+        "false_absence": 56,
+        "absence_contradiction": 33,
+        "multi_value": 25,
+        "wrong_value": 2
+      },
+      "absence_jaccard_mean": 0.2781686550423167
+    }
+  },
+  "human_audit": {
+    "n": 50,
+    "status": {
+      "n": 50,
+      "agree": 36,
+      "rate": 0.72,
+      "ci": [
+        0.5833461285401034,
+        0.8252598564231963
+      ]
+    },
+    "positive": {
+      "n": 33,
+      "agree": 18,
+      "rate": 0.5454545454545454,
+      "ci": [
+        0.3798565794374957,
+        0.701573108741085
+      ]
+    },
+    "absence": {
+      "n": 17,
+      "agree": 17,
+      "rate": 1.0,
+      "ci": [
+        0.8156763396284354,
+        1.0
+      ]
+    },
+    "kappa": 0.47994056463595836,
+    "disagreements": [
+      {
+        "id": "R01",
+        "field": "numeric_efficacy",
+        "human": "not_reported",
+        "hval": "",
+        "silver": "≥1.4",
+        "sunit": ""
+      },
+      {
+        "id": "R02",
+        "field": "dose",
+        "human": "not_reported",
+        "hval": "",
+        "silver": "500",
+        "sunit": "doxorubicins (DOXs) per ARTP"
+      },
+      {
+        "id": "R03",
+        "field": "numeric_efficacy",
+        "human": "not_reported",
+        "hval": "",
+        "silver": "significant",
+        "sunit": ""
+      },
+      {
+        "id": "R04",
+        "field": "time_points",
+        "human": "not_reported",
+        "hval": "",
+        "silver": "9",
+        "sunit": "H"
+      },
+      {
+        "id": "R07",
+        "field": "dose",
+        "human": "not_reported",
+        "hval": "",
+        "silver": "500 μM",
+        "sunit": ""
+      },
+      {
+        "id": "R08",
+        "field": "numeric_efficacy",
+        "human": "not_reported",
+        "hval": "",
+        "silver": "significantly inhibited",
+        "sunit": ""
+      },
+      {
+        "id": "R11",
+        "field": "serum_stability",
+        "human": "reported",
+        "hval": "72 h",
+        "silver": "800",
+        "sunit": "times"
+      },
+      {
+        "id": "R12",
+        "field": "id_per_g",
+        "human": "not_reported",
+        "hval": "",
+        "silver": "2.5-fold",
+        "sunit": ""
+      },
+      {
+        "id": "R14",
+        "field": "serum_stability",
+        "human": "not_reported",
+        "hval": "",
+        "silver": "high",
+        "sunit": ""
+      },
+      {
+        "id": "R15",
+        "field": "numeric_efficacy",
+        "human": "not_reported",
+        "hval": "",
+        "silver": "increase cellular internalization of DNA nanostructures",
+        "sunit": ""
+      },
+      {
+        "id": "R17",
+        "field": "numeric_efficacy",
+        "human": "not_reported",
+        "hval": "",
+        "silver": "selectively inhibit the growth of EpCAM-positive TNBC cells",
+        "sunit": ""
+      },
+      {
+        "id": "R21",
+        "field": "valency",
+        "human": "not_reported",
+        "hval": "",
+        "silver": "1411",
+        "sunit": ""
+      },
+      {
+        "id": "R22",
+        "field": "valency",
+        "human": "not_reported",
+        "hval": "",
+        "silver": "various numbers",
+        "sunit": ""
+      },
+      {
+        "id": "R28",
+        "field": "valency",
+        "human": "not_reported",
+        "hval": "",
+        "silver": "1",
+        "sunit": ""
+      },
+      {
+        "id": "R29",
+        "field": "immune",
+        "human": "not_reported",
+        "hval": "",
+        "silver": "TLR",
+        "sunit": ""
+      }
+    ]
+  },
+  "cleaning": {
+    "positive_instances_before": 206,
+    "positive_instances_after": 147,
+    "n_removed": 59,
+    "n_corrected": 2,
+    "removed_examples": [
+      {
+        "doc_id": "S0_abs",
+        "field": "numeric_efficacy",
+        "values": [
+          "significantly inhibited"
+        ]
+      },
+      {
+        "doc_id": "S0_full",
+        "field": "numeric_efficacy",
+        "values": [
+          "potent suppression of tumor growth"
+        ]
+      },
+      {
+        "doc_id": "S1_abs",
+        "field": "numeric_efficacy",
+        "values": [
+          "66.86"
+        ]
+      },
+      {
+        "doc_id": "S3_abs",
+        "field": "numeric_efficacy",
+        "values": [
+          "significantly higher"
+        ]
+      },
+      {
+        "doc_id": "S8_abs",
+        "field": "numeric_efficacy",
+        "values": [
+          "selectively inhibit the growth of EpCAM-positive TNBC cells"
+        ]
+      },
+      {
+        "doc_id": "S8_abs",
+        "field": "serum_stability",
+        "values": [
+          "superior structural stability"
+        ]
+      },
+      {
+        "doc_id": "S10_abs",
+        "field": "numeric_efficacy",
+        "values": [
+          "significant"
+        ]
+      },
+      {
+        "doc_id": "S10_abs",
+        "field": "valency",
+        "values": [
+          "multivalent"
+        ]
+      },
+      {
+        "doc_id": "S10_abs",
+        "field": "size",
+        "values": [
+          "two-dimensional"
+        ]
+      },
+      {
+        "doc_id": "S14_abs",
+        "field": "numeric_efficacy",
+        "values": [
+          "highest"
+        ]
+      },
+      {
+        "doc_id": "S14_full",
+        "field": "size",
+        "values": [
+          "74"
+        ]
+      },
+      {
+        "doc_id": "S24_full",
+        "field": "size",
+        "values": [
+          "14"
+        ]
+      },
+      {
+        "doc_id": "S33_abs",
+        "field": "valency",
+        "values": [
+          "multihetero",
+          "dihetero",
+          "trihetero"
+        ]
+      },
+      {
+        "doc_id": "S50_full",
+        "field": "size",
+        "values": [
+          "15",
+          "9"
+        ]
+      },
+      {
+        "doc_id": "S51_abs",
+        "field": "dose",
+        "values": [
+          "1/1500"
+        ]
+      },
+      {
+        "doc_id": "S51_abs",
+        "field": "time_points",
+        "values": [
+          "60 days"
+        ]
+      },
+      {
+        "doc_id": "S55_abs",
+        "field": "serum_stability",
+        "values": [
+          "excellent"
+        ]
+      },
+      {
+        "doc_id": "S61_abs",
+        "field": "dose",
+        "values": [
+          "500 doxorubicins (DOXs) per ARTP"
+        ]
+      },
+      {
+        "doc_id": "S72_abs",
+        "field": "numeric_efficacy",
+        "values": [
+          "77.8"
+        ]
+      },
+      {
+        "doc_id": "S75_abs",
+        "field": "numeric_efficacy",
+        "values": [
+          "≥1.4"
+        ]
+      },
+      {
+        "doc_id": "S78_abs",
+        "field": "serum_stability",
+        "values": [
+          "excellent"
+        ]
+      },
+      {
+        "doc_id": "S78_full",
+        "field": "serum_stability",
+        "values": [
+          "excellent stability",
+          "60% %"
+        ]
+      },
+      {
+        "doc_id": "S80_abs",
+        "field": "numeric_efficacy",
+        "values": [
+          "significantly inhibit"
+        ]
+      },
+      {
+        "doc_id": "S81_abs",
+        "field": "numeric_efficacy",
+        "values": [
+          "boosted the antitumor efficacy %"
+        ]
+      },
+      {
+        "doc_id": "S81_full",
+        "field": "time_points",
+        "values": [
+          "2 days"
+        ]
+      },
+      {
+        "doc_id": "S81_full",
+        "field": "size",
+        "values": [
+          "13.22",
+          "7.14"
+        ]
+      },
+      {
+        "doc_id": "S83_abs",
+        "field": "size",
+        "values": [
+          "micron-scale"
+        ]
+      },
+      {
+        "doc_id": "S89_abs",
+        "field": "id_per_g",
+        "values": [
+          "2.5-fold"
+        ]
+      },
+      {
+        "doc_id": "S89_abs",
+        "field": "numeric_efficacy",
+        "values": [
+          "90"
+        ]
+      },
+      {
+        "doc_id": "S89_full",
+        "field": "numeric_efficacy",
+        "values": [
+          "90"
+        ]
+      },
+      {
+        "doc_id": "S90_abs",
+        "field": "valency",
+        "values": [
+          "various numbers"
+        ]
+      },
+      {
+        "doc_id": "S91_abs",
+        "field": "valency",
+        "values": [
+          "different numbers"
+        ]
+      },
+      {
+        "doc_id": "S96_abs",
+        "field": "numeric_efficacy",
+        "values": [
+          "restrict tumour growth, increase survival rate"
+        ]
+      },
+      {
+        "doc_id": "S98_abs",
+        "field": "numeric_efficacy",
+        "values": [
+          "efficient"
+        ]
+      },
+      {
+        "doc_id": "S98_full",
+        "field": "dose",
+        "values": [
+          "500 μM"
+        ]
+      },
+      {
+        "doc_id": "S108_full",
+        "field": "size",
+        "values": [
+          "90"
+        ]
+      },
+      {
+        "doc_id": "S110_abs",
+        "field": "valency",
+        "values": [
+          "bivalent"
+        ]
+      },
+      {
+        "doc_id": "S113_full",
+        "field": "numeric_efficacy",
+        "values": [
+          "5"
+        ]
+      },
+      {
+        "doc_id": "S113_full",
+        "field": "size",
+        "values": [
+          "250"
+        ]
+      },
+      {
+        "doc_id": "S127_abs",
+        "field": "numeric_efficacy",
+        "values": [
+          "significantly decreased %"
+        ]
+      }
+    ],
+    "corrected": [
+      {
+        "doc_id": "S37_abs",
+        "field": "serum_stability",
+        "old": [
+          "800 times"
+        ],
+        "new": "72 h"
+      },
+      {
+        "doc_id": "S81_full",
+        "field": "valency",
+        "old": [
+          "1"
+        ],
+        "new": "4"
+      }
+    ],
+    "systems": {
+      "E0_rules": {
+        "value_macro_f1": 0.38183540305754404,
+        "presence_macro_f1": 0.986637015874362,
+        "quote_valid_rate": 1.0,
+        "coverage_high": 0.8854166666666666,
+        "n_high_fields": 1445,
+        "per_field": {
+          "kd": 0.6666666666666666,
+          "id_per_g": 0.0,
+          "half_life": 0.5,
+          "dose": 0.8133333333333332,
+          "route": 0.6818181818181818,
+          "time_points": 0.7749642514348396,
+          "numeric_efficacy": 0.0,
+          "serum_stability": 0.2,
+          "valency": 0.5903361344537814,
+          "linker_chemistry": 0.0,
+          "size": 0.0,
+          "attachment": 0.0,
+          "comparator": 0.391304347826087,
+          "immune": 0.7272727272727273
+        },
+        "tier_value_f1": {
+          "1": 0.45459780415662765,
+          "2": 0.14758403361344535,
+          "3": 0.5592885375494071
+        }
+      },
+      "E1_zero_shot": {
+        "value_macro_f1": 0.04790097857324748,
+        "presence_macro_f1": 0.9672701215720455,
+        "quote_valid_rate": 0.6,
+        "coverage_high": 0.8854166666666666,
+        "n_high_fields": 1445,
+        "per_field": {
+          "kd": 0.0,
+          "id_per_g": 0.0,
+          "half_life": 0.0,
+          "dose": 0.0,
+          "route": 0.09090909090909091,
+          "time_points": 0.0196078431372549,
+          "numeric_efficacy": 0.38095238095238093,
+          "serum_stability": 0.0,
+          "valency": 0.08823529411764706,
+          "linker_chemistry": 0.0,
+          "size": 0.0,
+          "attachment": 0.0,
+          "comparator": 0.0,
+          "immune": 0.09090909090909091
+        },
+        "tier_value_f1": {
+          "1": 0.061433664374840845,
+          "2": 0.022058823529411766,
+          "3": 0.045454545454545456
+        }
+      },
+      "HYBRID": {
+        "value_macro_f1": 0.41485588397718465,
+        "presence_macro_f1": 0.9764087586329651,
+        "quote_valid_rate": 1.0,
+        "coverage_high": 0.8854166666666666,
+        "n_high_fields": 1445,
+        "per_field": {
+          "kd": 0.6666666666666666,
+          "id_per_g": 0.0,
+          "half_life": 0.5,
+          "dose": 0.8133333333333332,
+          "route": 0.6818181818181818,
+          "time_points": 0.7749642514348396,
+          "numeric_efficacy": 0.14285714285714285,
+          "serum_stability": 0.4,
+          "valency": 0.6491596638655461,
+          "linker_chemistry": 0.0,
+          "size": 0.0,
+          "attachment": 0.0,
+          "comparator": 0.391304347826087,
+          "immune": 0.7878787878787878
+        },
+        "tier_value_f1": {
+          "1": 0.4974549470137705,
+          "2": 0.16228991596638653,
+          "3": 0.5895915678524374
+        }
+      }
+    }
+  }
+}

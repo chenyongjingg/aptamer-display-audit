@@ -26,24 +26,26 @@ automatically, and where value extraction still fails.
 
 ## Headline results (102 documents, 204 high+medium positives)
 
-**Confirmatory** — protocol frozen before inference; S0 pre-registration gate passed
-(`prereg_zs_20261117`, `hybrid_confirm`, `or_confirm`):
+**Label-cleaned analysis (manuscript analysis set)** — after a 50-instance blinded human anchor
+(positive agreement 54.5%, absence 100%), 59 qualitative/wrong-field values were removed and all
+metrics recomputed. See `docs/LABEL_CLEANING.md`; the raw confirmatory run is archived in
+`docs/CONFIRMATORY_RESULTS.md`.
 
 | System | presence macro-F1 | **value-F1 (primary)** | quote valid |
 |---|---|---|---|
-| E0 rules | 0.998 | **0.397** | 1.000 |
-| E1 Qwen2.5-7B zero-shot | 0.975 | **0.030** | 0.600 |
-| **HYBRID (rules + field-level LLM)** | 0.990 | **0.418** | 1.000 |
+| E0 rules | 0.987 | **0.382** | 1.000 |
+| E1 Qwen2.5-7B zero-shot | 0.967 | **0.048** | 0.600 |
+| **HYBRID (rules + field-level LLM)** | 0.976 | **0.415** | 1.000 |
 
-Temporal split (value-F1): hybrid 0.403 on 2025+ (n=25) vs 0.465 pre-2025 (n=77);
-zero-shot 0.025 vs 0.031 — the ranking is stable across time.
+Temporal split (value-F1): hybrid 0.363 on 2025+ (n=25) vs 0.515 pre-2025 (n=77);
+zero-shot 0.042 vs 0.058 — the ranking is stable across time.
 
-**Robustness (post-confirmatory, not pre-registered):** hybrid−rules +0.0217,
-95% CI [0.0052, 0.0418]; dropping the Ministral silver source keeps the ranking
-(0.423 / 0.028 / 0.442); hybrid is 0.669 on full texts vs 0.250 on abstracts.
+**Robustness (post-confirmatory, not pre-registered):** hybrid−rules +0.034,
+95% CI [0.004, 0.081]; dropping the Ministral silver source keeps the ranking
+(0.440 / 0.048 / 0.468); hybrid is 0.646 on full texts vs 0.266 on abstracts.
 Cross-family: on the same 40-document subset, Ministral-8B zero-shot reaches
-**0.251** vs Qwen2.5-7B **0.039**, and Ministral hybrid **0.487** vs Qwen hybrid
-**0.418** (presence 0.869 vs 0.990). The 0.030 zero-shot figure is therefore
+**0.218** vs Qwen2.5-7B **0.070**, and Ministral hybrid **0.485** vs Qwen hybrid
+**0.415** (presence 0.851 vs 0.976). The 0.030 zero-shot figure is therefore
 model-specific, not a general property of zero-shot LLMs.
 
 **Exploratory (post-hoc, archived; not pre-registered):** field-level LLM alone 0.415;
