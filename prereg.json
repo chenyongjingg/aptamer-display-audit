@@ -1,0 +1,9 @@
+{
+  "version": "prereg-zs-20261117",
+  "frozen_utc": "2026-11-17T02:19:52.212604Z",
+  "hashes": {
+    "protocol.md": "9f6ee66882cc15495e7c9a76b0e2bd3cfd75485bdcf6c7ffe5f35456f4650df1",
+    "prompts/p2.md": "7c1970d20d0288036aae9757738ed056c530440a0efbeafec7f56fdf14951c4a",
+    "configs/prereg_zs.yaml": "afb2d0f4d3fa4be2e3d37b381c95d51283dcbaa3a2b848809c17b631ab1ec4e0"
+  }
+}
