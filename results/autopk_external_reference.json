@@ -1,0 +1,9 @@
+{
+  "source": "AutoPK, IEEE ICTAI 2025, doi:10.1109/ICTAI66417.2025.00051",
+  "human_labeled_tables": 605,
+  "reported_f1": {"half_life": 0.92, "clearance": 0.91},
+  "reported_hallucination_rate": "8-14% (Gemma 3-27B with AutoPK)",
+  "status": "literature_comparator_not_rerun",
+  "reason": "The 605 annotated tables are not publicly released; the repository provides DOIs and code, not tables/labels. Re-running the 100-table anchor would require the authors' data or new annotation, which this project does not perform.",
+  "interpretation": "Clinically/veterinarily structured PK tables are near-solved; narrative preclinical text with conditionals and absence is harder. The comparison is task-level, not a head-to-head run."
+}

@@ -67,6 +67,13 @@ A confirmatory zero-shot audit was frozen before inference on 2026-11-17:
 as **post-hoc exploratory**; do not cite it as pre-registered. QLoRA is
 exploratory/negative and is not claimed as bitwise reproducible.
 
+## External PK-table comparator
+
+AutoPK reports human-labeled table F1 0.92 (half-life) and 0.91 (clearance) on 605
+tables. Its tables/labels are not publicly released (only DOIs and code), so this
+repository **does not rerun** the 100-table anchor. The published metrics are used
+as an external task-level comparator; see `results/autopk_external_reference.json`.
+
 ## Scientific scope
 
 - No human annotation. Silver labels are a **machine consensus**, not human truth;
